@@ -1,0 +1,1818 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>QuickChat - Панель управления</title>
+        <link rel="icon" type="image/ico" href="" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+        <!-- ============================================
+        ================= Stylesheets ===================
+        ============================================= -->
+        <!-- vendor css files -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/daterangepicker/daterangepicker-bs3.css">
+        <link rel="stylesheet" href="assets/js/vendor/morris/morris.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/js/vendor/rickshaw/rickshaw.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/datatables.bootstrap.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/js/vendor/summernote/summernote.css">
+
+        <!-- project main css files -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--/ stylesheets -->
+
+
+
+        <!-- ==========================================
+        ================= Modernizr ===================
+        =========================================== -->
+        <script src="assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--/ modernizr -->
+
+
+
+
+    </head>
+
+
+
+
+
+    <body id="quickchat" class="appWrapper">
+
+
+
+
+
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Please <a href="http://browsehappy.com/">обновите его</a> для комфортной работы.</p>
+        <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ====================================================
+        ================= Application Content ===================
+        ===================================================== -->
+        <div id="wrap" class="animsition">
+
+
+
+
+
+
+            <!-- ===============================================
+            ================= HEADER Content ===================
+            ================================================ -->
+            <section id="header">
+                <header class="clearfix">
+
+                    <!-- Branding -->
+                    <div class="branding">
+                        <a class="brand" href="">
+                            <span>QuickChat</span>
+                        </a>
+                        <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!-- Branding end -->
+
+
+
+                    <!-- Left-side navigation -->
+                    <ul class="nav-left pull-left list-unstyled list-inline">
+                        <li class="sidebar-collapse divided-right">
+                            <a role="button" tabindex="0" class="collapse-sidebar">
+                                <i class="fa fa-outdent"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Left-side navigation end -->
+
+
+
+
+                    <!-- Right-side navigation -->
+                    <ul class="nav-right pull-right list-inline">
+                    
+                      <li class="dropdown users">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i>
+                                <span class="badge bg-lightred">2</span>
+                            </a>
+
+                            <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInUp" role="menu">
+
+                                <div class="panel-heading">
+                                    Сейчас на сайте <strong>2</strong>
+                                </div>
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        <a href="#" class="media">
+                                           <span class="pull-left media-object  thumb thumb-sm">
+                                                <img src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="" class="img-circle">
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Клиент</span>
+                                                <small class="text-muted">Зашел на</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a href="#" class="media">
+                                            <span class="pull-left media-object  thumb thumb-sm">
+                                                <img src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="" class="img-circle">
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Клиент</span>
+                                                <small class="text-muted">Зашел на</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                        <li class="dropdown notifications">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge bg-lightred">3</span>
+                            </a>
+
+                            <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInLeft">
+
+                                <div class="panel-heading">
+                                    У Вас есть уведомления <strong>3</strong>
+                                </div>
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-danger">
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 1</span>
+                                                <small class="text-muted">6 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-primary">
+                                                <i class="fa fa-bolt"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 2</span>
+                                                <small class="text-muted">12 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-greensea">
+                                                <i class="fa fa-lock"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 3</span>
+                                                <small class="text-muted">18 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                        <li class="dropdown nav-profile">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
+                                <span>Имя Фамилия <i class="fa fa-angle-down"></i></span>
+                            </a>
+
+                            <ul class="dropdown-menu animated littleFadeInRight" role="menu">
+
+                                <li>
+                                    <a role="button" tabindex="0">
+                                        <i class="fa fa-user"></i>Аккаунт
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0">
+                                        <i class="fa fa-sign-out"></i>Выйти
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <!-- Right-side navigation end -->
+
+
+
+                </header>
+
+            </section>
+            <!--/ HEADER Content  -->
+
+
+
+
+
+            <!-- =================================================
+            ================= CONTROLS Content ===================
+            ================================================== -->
+            <div id="controls">
+
+
+
+
+
+                <!-- ================================================
+                ================= SIDEBAR Content ===================
+                ================================================= -->
+                <aside id="sidebar">
+
+
+                    <div id="sidebar-wrap">
+
+                        <div class="panel-group slim-scroll" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#sidebarNav">
+                                            Навигация <i class="fa fa-angle-up"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="sidebarNav" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+
+
+                                        <!-- ===================================================
+                                        ================= NAVIGATION Content ===================
+                                        ==================================================== -->
+                                        <ul id="navigation">
+                                            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> <span>Главная</span></a></li>
+                                            <li>
+                                                <a href="chat.html" role="button" tabindex="0"><i class="fa fa-comments"></i> <span>Войти в чат</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="pay.html" role="button" tabindex="0"><i class="fa fa-credit-card"></i> <span>Оплата</span></a>
+                                            </li>
+                                            
+
+                                        </ul>
+                                        <!--/ NAVIGATION Content -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </aside>
+                <!--/ SIDEBAR Content -->
+
+                <!-- =================================================
+                ================= RIGHTBAR Content ===================
+                ================================================== -->
+                <aside id="rightbar">
+                  <div role="tabpanel">
+
+
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="users">
+                                <h6><strong>Список</strong> аудио  <a href="javascript:void;" class="toggle-audio-sidebar btn-xs btn btn-greensea mb-5">Закрыть</a></h6>
+
+                                <ul class="settings">
+
+                                    <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                                <audio src="sound.mp3" controls></audio>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      
+                                    <form id="fileupload" action="" method="POST" enctype="multipart/form-data" style="width:200px;" class="">
+                                    <li>
+                                      <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                     
+                                                  <input type="file" name="files[]" multiple>
+                                                </div>
+                                             </div>
+                                            </li>
+                                      <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                      <button class="btn btn-greensea mb-10">Загрузить</button>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      </form>
+
+                                    
+
+                                </ul>
+                            </div>
+
+                        
+
+                            
+
+                                                    </div>
+
+                    </div>
+
+                </aside>
+
+                
+                <aside id="audio">
+
+                    <div role="tabpanel">
+
+
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="users">
+                                <h6><strong>Список</strong> Приветствий  <a href="javascript:void;" class="toggle-audio-sidebar btn-xs btn btn-greensea mb-5">Закрыть</a></h6>
+
+                                <ul class="settings">
+
+                                    <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                                <audio src="sound.mp3" controls></audio>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      
+                                    <form id="fileupload" action="" method="POST" enctype="multipart/form-data" style="width:200px;" class="">
+                                    <li>
+                                      <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                     
+                                                  <input type="file" name="files[]" multiple>
+                                                </div>
+                                             </div>
+                                            </li>
+                                      <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                      <button class="btn btn-greensea mb-10">Загрузить</button>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      </form>
+
+                                    
+
+                                </ul>
+                            </div>
+
+                        
+
+                            
+
+                                                    </div>
+
+                    </div>
+
+                </aside>
+                
+                <aside id="video">
+
+                    <div role="tabpanel">
+
+
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="users">
+                                <h6><strong>Список</strong> видео  <a href="javascript:void;" class="toggle-video-sidebar btn-xs btn btn-greensea mb-5">Закрыть</a></h6>
+
+                                <ul class="settings">
+
+                                    <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                                <video src="sound.mp3" controls></video>
+                                            </div>
+                                        </div>
+                                    </li>
+                                      
+                                    <form id="fileupload" action="" method="POST" enctype="multipart/form-data" style="width:200px;" class="">
+                                    <li>
+                                      <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                     
+                                                  <input type="file" name="files[]" multiple>
+                                                </div>
+                                             </div>
+                                            </li>
+                                      <li>
+                                        <div class="form-group">
+                                            
+                                            <div class="col-xs-12 control-label">
+                                      <button class="btn btn-greensea mb-10">Загрузить</button>
+                                          </div>
+                                        </div>
+                                      </li>
+                                      </form>
+
+                                    
+
+                                </ul>
+                            </div>
+
+                        
+
+                            
+
+                                                    </div>
+
+                    </div>
+
+                </aside>
+                
+                                <!--/ RIGHTBAR Content -->
+
+
+
+               
+
+
+
+
+            <!-- ====================================================
+            ================= CONTENT ===============================
+            ===================================================== -->
+            <section id="content">
+
+                <div class="page page-dashboard">
+
+                    <div class="pageheader">
+
+                        <h2>Главная <span>// добро пожаловать в панель управления</span></h2>
+
+                        <div class="page-bar">
+
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <a href=""><i class="fa fa-home"></i> QuickChat</a>
+                                </li>
+                                <li>
+                                    <a href="">Главная</a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                    </div>
+
+                  
+
+
+
+
+<div class="row">
+
+                        <!-- col -->
+                        <div class="col-md-6">
+
+                            <!-- tile -->
+                            <section class="tile">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="custom-font">Сайты</h1>
+                                    
+                                    
+                                    <ul class="controls">
+                                        <li><a role="button" tabindex="0" data-toggle="modal" data-target="#splash" data-options="splash-2 splash-ef-8"><i class="fa fa-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /tile header -->
+
+                                <!-- tile body -->
+                                <div class="tile-body">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                                        test.kyralesov.ru
+
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                                                <div class="panel-body">
+                                                 <p>Срок обслуживания: <span class="text-success">бесплатно с 20 июля по 20 октября 2014 включительно.</span></p>
+                                                    <p><button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#site-settings" data-options="splash-2 splash-ef-8">Настройка</button> <button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#statistics" data-options="splash-2 splash-ef-8">Статистика</button> <a href="history.html" class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10">История сообщений</a> <button class="btn btn-ef btn-ef-1 btn-ef-1-danger btn-ef-1a mb-10" data-toggle="modal" data-target="#del">Удалить</button></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        kyralesov.ru
+                                                    </a>
+                                                    
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="true" style="">
+                                                <div class="panel-body">
+                                                    <p>Срок обслуживания: <span class="text-success">бесплатно с 20 июля по 20 октября 2014 включительно.</span></p>
+                                                    <p><button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#site-settings" data-options="splash-2 splash-ef-8">Настройка</button> <button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#statistics" data-options="splash-2 splash-ef-8">Статистика</button> <a href="history.html" class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10">История сообщений</a> <button class="btn btn-ef btn-ef-1 btn-ef-1-danger btn-ef-1a mb-10" data-toggle="modal" data-target="#del">Удалить</button></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        vk.com
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                                                <div class="panel-body">
+                                                    <p>Срок обслуживания: <span class="text-success">бесплатно с 20 июля по 20 октября 2014 включительно.</span></p>
+                                                    <p><button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#site-settings" data-options="splash-2 splash-ef-8">Настройка</button> <button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10" data-toggle="modal" data-target="#statistics" data-options="splash-2 splash-ef-8">Статистика</button> <a href="history.html" class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10">История сообщений</a> <button class="btn btn-ef btn-ef-1 btn-ef-1-danger btn-ef-1a mb-10" data-toggle="modal" data-target="#del">Удалить</button></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /tile body -->
+
+                            </section>
+                            <!-- /tile -->
+
+                        </div>
+                        <!-- /col -->
+
+
+                        <!-- col -->
+                        <div class="col-md-6">
+
+                            <!-- tile -->
+                            <section class="tile">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="custom-font">Консультанты</h1>
+                                    <ul class="controls">
+                                        <li class="hidden-xs"><a role="button" class="btn-success"><span style="color:#fff;">Online: 0</span></a></li>
+                                        <li class="hidden-xs"><a role="button" class="btn-danger"><span style="color:#fff;">Offline: 0</span></a></li>
+                                        <li><a role="button" tabindex="0" data-toggle="modal" data-target="#consultant" data-options="splash-2 splash-ef-8"><i class="fa fa-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /tile header -->
+
+                                <!-- tile body -->
+                                <div class="tile-body">
+
+                                    <div class="media pointer">
+                                                        <div class="pull-left thumb">
+                                                            <img data-toggle="modal" data-target="#consul" data-options="splash-2 splash-ef-8" class="media-object img-circle" src="assets/images/random-avatar6.jpg" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p data-toggle="modal" data-target="#consul" data-options="splash-2 splash-ef-8" class="media-heading mb-0 mt-10">Имя <strong>Фамилия <i class="fa fa-circle text-success pull-right"></i></strong></p>
+                                                            <small data-toggle="modal" data-target="#consul" data-options="splash-2 splash-ef-8" class="text-lightred">Администратор</small>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                                                      <div class="media pointer">
+                                                        <div class="pull-left thumb">
+                                                            <img class="media-object img-circle" src="assets/images/random-avatar6.jpg" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="media-heading mb-0 mt-10">Имя <strong>Фамилия <i class="fa fa-circle text-danger pull-right"></i></strong></p>
+                                                            <small class="text-lightred">Консультант</small>
+                                                        </div>
+                                                    </div>
+                                                                                                                                         <div class="media pointer">
+                                                        <div class="pull-left thumb">
+                                                            <img class="media-object img-circle" src="assets/images/random-avatar6.jpg" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="media-heading mb-0 mt-10">Имя <strong>Фамилия <i class="fa fa-circle text-danger pull-right"></i></strong></p>
+                                                            <small class="text-lightred">Консультант</small>
+                                                        </div>
+                                                    </div>
+
+                                </div>
+                                <!-- /tile body -->
+
+                            </section>
+                            <!-- /tile -->
+
+                        </div>
+                        <!-- /col -->
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                
+            </section>
+            <!--/ CONTENT -->
+
+
+
+
+
+
+        </div>
+        <!--/ Application Content -->
+
+
+
+
+
+<div class="modal splash fade" id="splash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Добавить сайт</h3>
+                    </div>
+                    <div class="modal-body">
+ <form class="form-horizontal" role="form">
+<div class="form-group">
+                                            <label class="col-sm-3 control-label">Адрес сайта</label>
+                                            <div class="col-sm-9">
+                                                <input type="url" name="fc12" class="form-control" placeholder="http://example.ru" data-parsley-trigger="change" required="" data-parsley-id="2079"><span class="help-block mb-0">Необходимо указать доменное имя сайта</span>
+                                            </div>
+                                        </div>
+                                        <hr class="line-dashed"/>
+<div class="form-group">
+                                            <label class="col-sm-3 control-label">Язык чата</label>
+                                            <div class="col-sm-9">
+
+                                                <select class="form-control mb-10">
+                                                    <option>Русский</option>
+                                                </select>
+                                                <span class="help-block mb-0">Выбранный Вами язык будет использован в окне чата на вашем сайте</span>
+                                            </div>
+                                        </div>
+
+
+                                        <hr class="line-dashed"/>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Добавить консультанта</label>
+                                            <div class="col-sm-9">
+                                                <select multiple="" tabindex="3" class="chosen-select" style="width: 260px;">
+                                                    <option value="">Имя Фамилия</option>
+                                                    <option value="">Имя Фамилия</option>
+                                                    <option value="">Имя Фамилия</option>
+                                                    <option value="">Имя Фамилия</option>
+                                                    <option value="">Имя Фамилия</option>
+                                                    <option value="">Имя Фамилия</option>
+                                                </select>
+                                                <span class="help-block mb-0">Вы можете выбрать консультанта из ниже предложенного списка или с помощью поиска</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed"/>
+
+                                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-border">Добавить</button>
+                        <button class="btn btn-default btn-border" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="modal splash fade" id="site-settings" tabindex="-1" role="dialog" aria-labelledby="addConsultant" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Настройки test.kyralesov.ru</h3>
+                    </div>
+                    <div class="modal-body">
+<div class="tile-body p-0">
+
+
+
+                                    <div role="tabpanel">
+
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs tabs-dark" role="tablist">
+                                            <li role="presentation" class="active"><a href="#install" aria-controls="install" role="tab" data-toggle="tab" aria-expanded="false">Установка</a></li>
+                                            <li role="presentation" class=""><a href="#options" aria-controls="options" role="tab" data-toggle="tab" aria-expanded="false">Опции</a></li>
+                                            <li role="presentation"><a href="#design" aria-controls="design" role="tab" data-toggle="tab" aria-expanded="true">Дизайн</a></li>
+                                                                                        <li role="presentation"><a href="#notifications" aria-controls="notifications" role="tab" data-toggle="tab" aria-expanded="true">Уведомления</a></li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+
+                                            <div role="tabpanel" class="tab-pane active" id="install">
+                                                <div class="wrap-reset">
+                                                    <div class="panel panel-primary panel-filled">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title custom-font">Скопируйте этот код и вставьте на Ваш сайт прямо перед закрывающим тегом:</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p>Здесь будет код</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-ef btn-ef-1 btn-ef-1-primary btn-ef-1a mb-10">Перейти к инструкциям</button>
+                                    <button class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a mb-10" data-toggle="modal" data-target="#sentCode" data-options="splash-2 splash-ef-11">Отправить код на почтовый адрес</button>
+                                    
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane" id="options">
+                                                <div class="wrap-reset">
+                                                  <form class="form-horizontal" role="form">
+
+
+                                        <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Адрес сайта</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="input07" placeholder="http://test.kyralesov.ru" disabled>
+                                                <span class="help-block mb-0">Адрес Вашего сайта</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Часовой пояс</label>
+                                            <div class="col-sm-9">
+
+                                                <select class="form-control mb-10">
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                </select>
+                                                <span class="help-block mb-0">По этому часовому поясу будет работать система управления QUICKCHAT.</span>
+                                            </div>
+                                        </div>
+                                        
+                                                                                <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Язык окна чата</label>
+                                            <div class="col-sm-9">
+
+                                                <select class="form-control mb-10">
+                                                    <option>Русский</option>
+                                                </select>
+                                                <span class="help-block mb-0">Выбранный Вами язык будет использован в окне чата на вашем сайте.</span>
+                                            </div>
+                                        </div>
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Наблюдение за печатью</label>
+                                            <div class="col-sm-9">
+
+                                                <div class="onoffswitch labeled blue inline-block">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch10" checked="">
+                                                    <label class="onoffswitch-label" for="switch10">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                                <span class="help-block mb-0">Консультант может просматривать сообщения клиента до того, как клиент отправил сообщение.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Оценка качества услуг консультанта</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите интервал</option>
+                                                    <option>2 мин</option>
+                                                    <option>3 мин</option>
+                                                    <option>4 мин</option>
+                                                    <option>5 мин</option>
+                                                    <option>6 мин</option>
+                                                    <option>7 мин</option>
+                                                    <option>8 мин</option>
+                                                    <option>9 мин</option>
+                                                    <option>10 мин</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете выбрать промежуток времени, за который хотите получить оценку качества работы, а также выключить данную функцию.</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                                                                <hr class="line-dashed line-full"/>
+                                                                                       <div class="form-group">
+                                            <label class="col-sm-3 control-label">Защищенное соединение</label>
+                                            <div class="col-sm-9">
+
+                                                <div class="onoffswitch labeled blue inline-block">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch11" checked="">
+                                                    <label class="onoffswitch-label" for="switch11">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                                <span class="help-block mb-0">Сообщения в диалогах между консультантами и клиентами зашифрованы по протоколу SSL</span>
+
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Звук сообщения чата</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите звук</option>
+                                                    <option>Blub</option>
+                                                    <option>Harmony</option>
+                                                    <option>Bird</option>
+                                                    <option>Down</option>
+                                                    <option>Zip</option>
+                                                    <option>Allien</option>
+                                                    <option>Tril</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете подключить услугу «звуковое сообщение»</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Звук при открытие виджета</label>
+                                            <div class="col-sm-9">
+
+
+                                                <select class="form-control col-xs-9">
+                                                    <option>Выберите звук</option>
+                                                    <option>Blub</option>
+                                                    <option>Harmony</option>
+                                                    <option>Bird</option>
+                                                    <option>Down</option>
+                                                    <option>Zip</option>
+                                                    <option>Allien</option>
+                                                    <option>Tril</option>
+                                                </select>
+                                               
+                                               
+                                                <span class="help-block mb-0">Выберите звук который будет проигрываться при открытии виджета</span></div>
+                                           
+                                        </div>
+                                        
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Звуковое приветствие</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите приветствие</option>
+                                                    <option>Blub</option>
+                                                    <option>Harmony</option>
+                                                    <option>Bird</option>
+                                                    <option>Down</option>
+                                                    <option>Zip</option>
+                                                    <option>Allien</option>
+                                                    <option>Tril</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div><hr>
+                                                </div>
+                                                <div class="row">
+                                             <div class="col-md-6 col-xs-12">
+
+                                                <input type="text" class="form-control" id="input01" placeholder="Задержка по секундам">
+                                               </div><hr class="visible-xs">
+                                               <div class="col-xs-6">
+                                               <a href="javascript:void;" class="toggle-audio-sidebar btn btn-xs btn-ef btn-ef-1 btn-ef-1-warning btn-ef-1c mb-10">Список приветствий</a>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете выбрать или добавить свое звуковое приветствие</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Видео реклама</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите рекламу</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div><hr>
+                                                </div>
+                                                <div class="row">
+                                             <div class="col-md-6 col-xs-12">
+
+                                                <input type="text" class="form-control" id="input01" placeholder="Задержка по секундам">
+                                               </div><hr class="visible-xs">
+                                               <div class="col-xs-6">
+                                               <a href="javascript:void;" class="toggle-video-sidebar btn btn-xs btn-ef btn-ef-1 btn-ef-1-warning btn-ef-1c mb-10">Список видео</a>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете выбрать рекламу</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Аудио реклама</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите рекламу</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div><hr>
+                                                </div>
+                                                <div class="row">
+                                             <div class="col-md-6 col-xs-12">
+
+                                                <input type="text" class="form-control" id="input01" placeholder="Задержка по секундам">
+                                               </div><hr class="visible-xs">
+                                               <div class="col-xs-6">
+                                               <a href="javascript:void;" class="toggle-audio-sidebar btn btn-xs btn-ef btn-ef-1 btn-ef-1-warning btn-ef-1c mb-10">Список аудио</a>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете выбрать рекламу</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                                                                
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Перезагрузка чата</label>
+                                            <div class="col-sm-9">
+
+                                                <div class="onoffswitch labeled blue inline-block">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch13" checked="">
+                                                    <label class="onoffswitch-label" for="switch13">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете включить опцию, которая позволяет не перезагружать чат при переходе на другую страницу.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Установка времени</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите интервал</option>
+                                                    <option>3 сек</option>
+                                                    <option>4 сек</option>
+                                                    <option>5 сек</option>
+                                                    <option>6 сек</option>
+                                                    <option>7 сек</option>
+                                                    <option>8 сек</option>
+                                                    <option>9 сек</option>
+                                                    <option>10 сек</option>
+                                                    <option>11 сек</option>
+                                                    <option>12 сек</option>
+                                                    <option>13 сек</option>
+                                                    <option>14 сек</option>
+                                                    <option>15 сек</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете установить время поднятия окна переписки после загрузки страницы сайта</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Информировать о неотвеченном сообщении</label>
+                                            <div class="col-sm-9">
+                                            <div class="row">
+                                             <div class="col-xs-6">
+
+                                                <select class="form-control col-xs-6">
+                                                    <option>Выберите интервал</option>
+                                                    <option>10 сек</option>
+                                                    <option>15 сек</option>
+                                                    <option>20 сек</option>
+                                                    <option>25 сек</option>
+                                                    <option>30 сек</option>
+                                                    <option>35 сек</option>
+                                                    <option>40 сек</option>
+                                                    <option>45 сек</option>
+                                                    <option>50 сек</option>
+                                                    <option>55 сек</option>
+                                                    <option>60 сек</option>
+                                                </select>
+                                               </div>
+                                               <div class="col-xs-6">
+                                               <label class="checkbox-inline checkbox-custom">
+                                                    <label class="checkbox-inline checkbox-custom">
+                                                    <input type="checkbox" id="inlineCheckbox6" value="option3"><i></i> Выключить
+                                                </label> 
+                                                </label>
+                                                </div>
+                                                <span class="help-block mb-0">Вы можете установить время, через которое клиенту будет предложен вариант связи с консультантом, если консультант не ответил на вопрос</span></div>
+                                            </div>
+                                        </div>
+                                        
+                                                                                <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <div class="col-sm-4 col-sm-offset-3">
+                                                <button class="btn btn-success btn-ef btn-ef-3 btn-ef-3c mb-10">Сохранить <i class="fa fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+
+                                    </form>  
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane" id="design">
+                                                <div class="wrap-reset">
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                            <div role="tabpanel" class="tab-pane" id="notifications">
+                                                <div class="wrap-reset">
+                                                    <blockquote>
+                                        <p>Раздел в разработке</p>
+                                    </blockquote>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-border" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<div class="modal splash fade" id="consultant" tabindex="-1" role="dialog" aria-labelledby="addConsultant" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Добавить консультанта</h3>
+                    </div>
+                    <div class="modal-body">
+ <form class="form-horizontal" role="form">
+<div class="form-group">
+                                            <label class="col-sm-3 control-label">Электронный адрес</label>
+                                            <div class="col-sm-9">
+                                                <input type="url" name="fc12" class="form-control" placeholder="hello@example.ru" data-parsley-trigger="change" required="" data-parsley-id="2079">
+                                            </div>
+                                        </div>
+
+
+
+                                        <hr class="line-dashed"/>
+
+                                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-border">Добавить</button>
+                        <button class="btn btn-default btn-border" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal splash fade" id="statistics" tabindex="-1" role="dialog" aria-labelledby="statistics" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Статистика test.kyralesov.ru</h3>
+                    </div>
+                    <div class="modal-body">
+ <!-- tile -->
+                            <section class="tile">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="custom-font"><strong>Полная</strong> статистика</h1>
+                                </div>
+                                <!-- /tile header -->
+
+                                <div class="tile-body">
+                                    <blockquote>
+                                        <p>Раздел в разработке</p>
+                                    </blockquote>
+
+                                </div>
+                                
+
+                            </section>
+                            <!-- /tile -->
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-border" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Modal -->
+        <div class="modal fade" id="del" tabindex="-1" role="dialog" aria-labelledby="del" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Удаление сайта</h3>
+                    </div>
+                    <div class="modal-body">
+                        Вы действительно хотите удалить сайт http://test.kyralesov.ru?
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success btn-ef btn-ef-3 btn-ef-3c"><i class="fa fa-arrow-right"></i> Удалить</button>
+                        <button class="btn btn-lightred btn-ef btn-ef-4 btn-ef-4c" data-dismiss="modal"><i class="fa fa-arrow-left"></i> Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="modal splash fade" id="consul" tabindex="-1" role="dialog" aria-labelledby="Consultant" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Консультант Имя Фамилия</h3>
+                    </div>
+                    <div class="modal-body">
+<div class="tile-body p-0">
+
+
+
+                                    <div role="tabpanel">
+
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs tabs-dark" role="tablist">
+                                            <li role="presentation" class="active"><a href="#settings" aria-controls="install" role="tab" data-toggle="tab" aria-expanded="false">Настройки</a></li>
+                                            <li role="presentation" class=""><a href="#stat" aria-controls="options" role="tab" data-toggle="tab" aria-expanded="false">Статистика</a></li>
+                                            <li role="presentation"><a href="#history" aria-controls="design" role="tab" data-toggle="tab" aria-expanded="true">История сообщений</a></li>
+                                                                                        <li role="presentation"><a href="#control" aria-controls="notifications" role="tab" data-toggle="tab" aria-expanded="true">Управление</a></li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+
+                                            <div role="tabpanel" class="tab-pane active" id="settings">
+                                                <div class="wrap-reset">
+                                                    <form class="form-horizontal" role="form">
+                                      <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Фотография</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                    <div class="col-sm-10 col-xs-8">
+                                                        <input type="file" name="photo" class="filestyle" data-buttonText="Загрузить" data-iconName="fa fa-inbox">
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-3">
+                                                        <button onclick="deletePhoto()" class="btn btn-ef btn-ef-1 btn-ef-1-danger btn-ef-1d mb-10">Удалить</button>
+                                                    </div>
+                                                </div>
+                                                <span class="help-block mb-0">Эти данные будут доступны в окне чата всем посетителям.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+
+                                        <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Имя и Фамилия</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <input type="text" name="surname" class="form-control" placeholder="Фамилия">
+                                                    </div>
+                                                </div>
+                                                <span class="help-block mb-0">Эти данные будут доступны в окне чата всем посетителям.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Должность</label>
+                                            <div class="col-sm-9">
+
+                                                <select class="form-control mb-10">
+                                                    <option></option>
+                                                </select>
+                                                <span class="help-block mb-0">Эти данные будут отображаться рядом с именем и фамилией и будут доступны всем посетителям чата.</span>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                                                                <hr class="line-dashed line-full"/>
+                                                                                <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Email</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                        <input type="text" name="email" class="form-control" placeholder="Email">
+                                                </div>
+                                                <span class="help-block mb-0">Указанный Вами е-mail будет вашим логином при входе в личный кабинет QUICKCHAT, а также использоваться для уведомлений, сообщений от клиентов, данных о консультантах online/offline.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Номер мобильного телефона</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="+7(XXX)XXXXXXX" data-parsley-trigger="change" pattern="^[\d\+\-\.\(\)\/\s]*$" required="" data-parsley-id="6239">
+                                                </div>
+                                                <span class="help-block mb-0">Указанный Вами номер телефона будет использован для отправки уведомлений от клиентов сайта, а также в случае решения какого-либо вопроса службой поддержки QUICKCHAT.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Часовой пояс</label>
+                                            <div class="col-sm-9">
+
+                                                <select name="time" class="form-control mb-10">
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                    <option>(UTC+4:00) Волгоград, Москва, Санкт-Петербург</option>
+                                                </select>
+                                                <span class="help-block mb-0">По этому часовому поясу будет работать система управления QUICKCHAT.</span>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                                                                <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Пароль</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <input type="password" name="password" class="form-control" placeholder="Введите пароль">
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <input type="password" name="password-confirm" class="form-control" placeholder="Повторите пароль">
+                                                    </div>
+                                                </div>
+                                                <span class="help-block mb-0">Данный пароль будет использован при входе в личный кабинет QUICKCHAT. Не используйте производные собственного имени, длина пароля не должна превышать восьми символов.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>
+                                        <div class="form-group">
+                                            <label for="input07" class="col-sm-3 control-label">Уведомления</label>
+                                            <div class="col-sm-9">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="checkbox">
+                                            <label class="checkbox checkbox-custom">
+                                                <input type="checkbox" name="agree" id="agree"
+                                                       required><i></i> Я согласен получать sms-уведомления.
+                                            </label>
+                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                         <div class="checkbox">
+                                            <label class="checkbox checkbox-custom">
+                                                <input type="checkbox" name="agree-2" id="agree-2"
+                                                       required><i></i> Я согласен получать email-уведомления.
+                                            </label>
+                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="help-block mb-0">При выборе данной опции вы соглашаетесь с рассылкой об изменениях в системе чата, а также об обновлениях, новостях и акциях QUICKCHAT.</span>
+                                            </div>
+                                        </div>
+
+                                        <hr class="line-dashed line-full"/>                                       
+                                        <div class="form-group">
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <button class="btn btn-success btn-ef btn-ef-3 btn-ef-3c mb-10">Сохранить <i class="fa fa-arrow-right"></i></button>
+                                            </div>
+                                            <div class="col-sm-4 col-sm-offset-2">
+                                                <button onclick="deleteConsultant()" class="btn btn-danger btn-ef btn-ef-3 btn-ef-3c mb-10">Удалить консультанта <i class="fa fa-trash"></i></button>
+                                            </div>
+                                        </div>
+
+                                    </form> 
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane" id="stat">
+                                                <div class="wrap-reset">
+                                                  <section class="tile">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1>&nbsp;</h1>
+                                    <ul class="controls">
+                                        <li>
+                                            <a role="button" tabindex="0" class="pickDate">
+                                                <span></span>&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /tile header -->
+
+                                <div class="tile-body">
+                                <h2 class="custom-font"><strong>Полная</strong> статистика</h2>
+                                    <blockquote>
+                                        <p>Раздел в разработке</p>
+                                    </blockquote>
+
+                                </div>
+                                
+                                
+
+                            </section>
+                            <!-- /tile -->  
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane" id="history">
+                                                
+                                                <div class="wrap-reset">
+                                                 <section class="tile">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="hidden-xs">Интервал отчета</h1>
+                                    <h1 class="visible-xs"><button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Выгрузить переписку за <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Сегодня</a></li>
+                                            <li><a href="#">Вчера</a></li>
+                                            <li><a href="#">7 дней</a></li>
+                                            <li><a href="#">1 месяц</a></li>
+                                            <li><a href="#">3 месяца</a></li>
+                                            <li><a href="#">6 месяцев</a></li>
+                                            <li><a href="#">12 месяцев</a></li>
+                                        </ul></h1>
+                                    <ul class="controls hidden-xs">
+                                        <li>
+                                            <a role="button" tabindex="0" class="pickDate">
+                                                <span></span>&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /tile header -->
+
+                            <!-- tile -->
+                            <section class="tile widget-chat">
+
+
+
+                                <!-- tile body -->
+                                <div class="tile-body slim-scroll" style="max-height: 320px;overflow:auto;">
+
+                                    <ul class="chats p-0">
+                                    <li class="conversation-divider"><span class="client">Клиент0001</span></li>
+                                        <li class="conversation-divider"><span>24.02.2016</span></li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:00</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:00</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:01</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:01</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:02</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:02</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- /tile body -->
+
+
+                            </section>
+                            <!-- /tile -->
+
+                            </section>
+                                                </div>
+                                            </div>
+                                            
+                                            <div role="tabpanel" class="tab-pane" id="control">
+                                                <div class="wrap-reset">
+                                                    <form class="form-horizontal" role="form">
+
+                                        <div class="form-group">
+                                            <label for="input01" class="col-sm-3 control-label">Должность</label>
+                                            <div class="col-sm-9">
+                                             <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <span class="add btn btn-success">Добавить</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+        <div class="col-sm-5 col-xs-4">
+                                                        <p class="text-center">Полная</p>
+                                                    </div>
+                                                    <div class="col-sm-5 col-xs-4">
+                                                        <p class="text-center">Краткая</p>
+                                                    </div>
+                                                    
+                                                </div>
+   <br/><div class="col-xs-12 repeatable"></div>
+                                             
+                                                <span class="help-block mb-0">Эти данные будут отображаться рядом с именем и фамилией и будут доступны всем посетителям чата.</span>
+                                            </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <hr class="line-dashed line-full"/>
+
+
+                                        <div class="form-group">
+                                            <div class="col-sm-4 col-sm-offset-3">
+                                                <button class="btn btn-success btn-ef btn-ef-3 btn-ef-3c mb-10">Сохранить <i class="fa fa-arrow-right"></i></button>
+                                            </div>
+                                           
+                                        </div>
+
+                                    </form>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal-footer">
+                        <button class="btn btn-default btn-border" data-dismiss="modal">Закрыть</button>
+                    </div>
+                                
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="sentCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title custom-font">Отправить код на почту</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+
+                                        <div class="form-group">
+                                            <label for="input01" class="col-sm-2 control-label">E-mail</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="email" class="form-control" id="input01">
+                                            </div>
+                                        </div>
+                                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success btn-ef btn-ef-3 btn-ef-3c"><i class="fa fa-arrow-right"></i> Отправить</button>
+                        <button class="btn btn-lightred btn-ef btn-ef-4 btn-ef-4c" data-dismiss="modal"><i class="fa fa-arrow-left"></i>Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- ============================================
+        ============== Vendor JavaScripts ===============
+        ============================================= -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script src="assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+        <script src="assets/js/vendor/d3/d3.min.js"></script>
+        <script src="assets/js/vendor/d3/d3.layout.min.js"></script>
+
+        <script src="assets/js/vendor/rickshaw/rickshaw.min.js"></script>
+
+        <script src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+        <script src="assets/js/vendor/daterangepicker/moment.min.js"></script>
+        <script src="assets/js/vendor/daterangepicker/daterangepicker.js"></script>
+
+        <script src="assets/js/vendor/screenfull/screenfull.min.js"></script>
+
+        <script src="assets/js/vendor/flot/jquery.flot.min.js"></script>
+        <script src="assets/js/vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/js/vendor/flot-spline/jquery.flot.spline.min.js"></script>
+
+        <script src="assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
+
+        <script src="assets/js/vendor/raphael/raphael-min.js"></script>
+        <script src="assets/js/vendor/morris/morris.min.js"></script>
+
+        <script src="assets/js/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+        <script src="assets/js/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="assets/js/vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/datatables/extensions/dataTables.bootstrap.js"></script>
+
+        <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+
+        <script src="assets/js/vendor/summernote/summernote.min.js"></script>
+
+        <script src="assets/js/vendor/coolclock/coolclock.js"></script>
+        <script src="assets/js/vendor/coolclock/excanvas.js"></script>
+        <script src="assets/js/vendor/filestyle/bootstrap-filestyle.min.js"></script>
+        <script src="assets/js/jquery.repeatable.js"></script>
+        <!--/ vendor javascripts -->
+
+
+
+
+        <!-- ============================================
+        ============== Custom JavaScripts ===============
+        ============================================= -->
+        <script src="assets/js/main.js"></script>
+        <!--/ custom javascripts -->
+
+
+
+
+
+        <script type="text/template" id="todos_labels">
+        <div class="row">
+        <div class="col-sm-5 col-xs-4">
+                                                        <input type="text" name="todos_labels[{?}][task]" value="{task}" id="task_{?}" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-5 col-xs-5">
+                                                        <p class="text-center">Консультант</p>
+                                                    </div>
+                                                    <div class="col-sm-2 col-xs-3"><span type="button" class="btn btn-danger span-2 delete">Убрать</span></div>
+                                                    &nbsp;
+                                                </div>
+                                               
+		</script>
+
+		<script>
+		$(function() {
+			
+			$(".repeatable").repeatable({
+				addTrigger: ".add",
+                DeleteTrigger: ".delete",
+				template: "#todos_labels",
+				startWith: 0,
+				max: 5,
+				itemContainer: ".row",
+			});
+		});
+		</script>
+		
+		<script>
+function deletePhoto() {
+    var x;
+    if (confirm("Вы уверены что хотите удалить фото?") == true) {
+        x = "Фото удалено";
+    } else {
+        x = "";
+    }
+
+}
+</script>
+
+		<script>
+function deleteConsultant() {
+    var x;
+    if (confirm("Вы уверены что хотите удалить консультанта?") == true) {
+        x = "Консультант удален";
+    } else {
+        x = "";
+    }
+
+}
+</script>
+
+
+    </body>
+</html>

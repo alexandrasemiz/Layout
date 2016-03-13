@@ -1,0 +1,577 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>QuickChat - Панель управления</title>
+        <link rel="icon" type="image/ico" href="" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+        <!-- ============================================
+        ================= Stylesheets ===================
+        ============================================= -->
+        <!-- vendor css files -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/daterangepicker/daterangepicker-bs3.css">
+        <link rel="stylesheet" href="assets/js/vendor/morris/morris.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/js/vendor/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/js/vendor/rickshaw/rickshaw.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/datatables/datatables.bootstrap.min.css">
+        <link rel="stylesheet" href="assets/js/vendor/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/js/vendor/summernote/summernote.css">
+
+        <!-- project main css files -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--/ stylesheets -->
+
+
+
+        <!-- ==========================================
+        ================= Modernizr ===================
+        =========================================== -->
+        <script src="assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!--/ modernizr -->
+
+
+
+
+    </head>
+
+
+
+
+
+    <body id="quickchat" class="appWrapper">
+
+
+
+
+
+
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Please <a href="http://browsehappy.com/">обновите его</a> для комфортной работы.</p>
+        <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ====================================================
+        ================= Application Content ===================
+        ===================================================== -->
+        <div id="wrap" class="animsition">
+
+
+
+
+
+
+            <!-- ===============================================
+            ================= HEADER Content ===================
+            ================================================ -->
+            <section id="header">
+                <header class="clearfix">
+
+                    <!-- Branding -->
+                    <div class="branding">
+                        <a class="brand" href="">
+                            <span>ЛОГОТИП</span>
+                        </a>
+                        <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <!-- Branding end -->
+
+
+
+                    <!-- Left-side navigation -->
+                    <ul class="nav-left pull-left list-unstyled list-inline">
+                        <li class="sidebar-collapse divided-right">
+                            <a role="button" tabindex="0" class="collapse-sidebar">
+                                <i class="fa fa-outdent"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Left-side navigation end -->
+
+
+
+
+                    <!-- Right-side navigation -->
+                    <ul class="nav-right pull-right list-inline">
+
+                        <li class="dropdown notifications">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="badge bg-lightred">3</span>
+                            </a>
+
+                            <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInLeft">
+
+                                <div class="panel-heading">
+                                    У Вас есть уведомления <strong>3</strong>
+                                </div>
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-danger">
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 1</span>
+                                                <small class="text-muted">6 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-primary">
+                                                <i class="fa fa-bolt"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 2</span>
+                                                <small class="text-muted">12 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <a role="button" tabindex="0" class="media">
+                                            <span class="pull-left media-object media-icon bg-greensea">
+                                                <i class="fa fa-lock"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <span class="block">Уведомление 3</span>
+                                                <small class="text-muted">18 минут назад</small>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+                        </li>
+
+                        <li class="dropdown nav-profile">
+
+                            <a href class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
+                                <span>Имя Фамилия <i class="fa fa-angle-down"></i></span>
+                            </a>
+
+                            <ul class="dropdown-menu animated littleFadeInRight" role="menu">
+
+                                <li>
+                                    <a role="button" tabindex="0">
+                                        <i class="fa fa-user"></i>Аккаунт
+                                    </a>
+                                </li>
+                                <li>
+                                    <a role="button" tabindex="0">
+                                        <i class="fa fa-sign-out"></i>Выйти
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <!-- Right-side navigation end -->
+
+
+
+                </header>
+
+            </section>
+            <!--/ HEADER Content  -->
+
+
+
+
+
+            <!-- =================================================
+            ================= CONTROLS Content ===================
+            ================================================== -->
+            <div id="controls">
+
+
+
+
+
+                <!-- ================================================
+                ================= SIDEBAR Content ===================
+                ================================================= -->
+                <aside id="sidebar">
+
+
+                    <div id="sidebar-wrap">
+
+                        <div class="panel-group slim-scroll" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#sidebarNav">
+                                            Навигация <i class="fa fa-angle-up"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="sidebarNav" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+
+
+                                        <!-- ===================================================
+                                        ================= NAVIGATION Content ===================
+                                        ==================================================== -->
+                                        <ul id="navigation">
+                                            <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Главная</span></a></li>
+                                            <li>
+                                                <a href="chat.html" role="button" tabindex="0"><i class="fa fa-comments"></i> <span>Войти в чат</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="pay.html" role="button" tabindex="0"><i class="fa fa-credit-card"></i> <span>Оплата</span></a>
+                                            </li>
+                                            
+
+                                        </ul>
+                                        <!--/ NAVIGATION Content -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </aside>
+                <!--/ SIDEBAR Content -->
+                
+
+            <!-- ====================================================
+            ================= CONTENT ===============================
+            ===================================================== -->
+            <section id="content">
+            <div class="page page-ui-widgets">
+              <div class="pageheader">
+
+                        <h2>История сообщений</h2>
+
+                    </div>
+              <div class="row">
+            <!-- col -->
+                        <div class="col-md-12">
+                            <!-- tile -->
+                            <section class="tile widget-chat">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="custom-font">Выберите интервал отчета</h1>
+                                    <ul class="controls hidden-xs">
+                                      <li>
+                                            <a role="button" tabindex="0" class="pickDate">
+                                                <span></span>&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- /tile header -->
+                                
+                                <!-- tile header -->
+                                <div class="visible-xs tile-header dvd dvd-btm">
+                                    <h1 class="custom-font"><div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            Количество дней <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Сегодня</a></li>
+                                            <li><a href="#">Вчера</a></li>
+                                            <li><a href="#">7 дней</a></li>
+                                            <li><a href="#">30 дней</a></li>
+                                            <li><a href="#">3 месяца</a></li>
+                                            <li><a href="#">6 месяцев</a></li>
+                                            <li><a href="#">12 месяцев</a></li>
+                                        </ul>
+                                    </div></h1>
+    
+                                </div>
+                                <!-- /tile header -->
+
+                            </section>
+                            <!-- /tile -->
+                        </div>
+                        <!-- /col -->
+                      </div>
+                        <div class="row">
+            <div class="col-md-4">
+                            
+                            <!-- tile -->
+                            <section class="tile tile-simple">
+
+                                <!-- tile widget -->
+                                <div class="tile-widget dvd dvd-btm">
+
+                                    <h5 class="text-strong m-0">Консультанты</h5>
+
+                                </div>
+                                <!-- /tile widget -->
+
+                                <!-- tile body -->
+                                <div class="tile-body p-0">
+
+                                    <ul class="list-unstyled slim-scroll" style="max-height: 320px;overflow:auto;">
+                                        <li class="p-10 b-b bg-drank">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar8.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading mb-0">Имя Фамилия </h5>
+                                                    <small class="text-muted">Консультант</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="p-10 b-b">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar7.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading mb-0">Имя Фамилия</h5>
+                                                    <small class="text-muted">Консультант</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="p-10 b-b">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar6.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading mb-0">Имя Фамилия</h5>
+                                                    <small class="text-muted">Консультант</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="p-10">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar5.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading mb-0">Имя Фамилия</h5>
+                                                    <small class="text-muted">Консультант</small>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- /tile body -->
+
+                            </section>
+                            <!-- /tile -->
+
+            </div>
+            
+             <!-- col -->
+                        <div class="col-md-8">
+                            <!-- tile -->
+                            <section class="tile widget-chat">
+
+                                <!-- tile header -->
+                                <div class="tile-header dvd dvd-btm">
+                                    <h1 class="custom-font">История</h1>
+                                   
+                                </div>
+                                <!-- /tile header -->
+
+                                <!-- tile body -->
+                                <div class="tile-body slim-scroll" style="max-height: 520px;overflow:auto;">
+
+                                    <ul class="chats p-0">
+                                    <li class="conversation-divider"><span class="client">Клиент0001</span></li>
+                                        <li class="conversation-divider"><span>24.02.2016</span></li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:00</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:00</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:01</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:01</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="in">
+                                            <div class="media">
+                                                <div class="pull-left thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="http://test.kyralesov.ru/quick2/app/assets/images/user.png" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Клиент </a><span class="datetime">11:02</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="out">
+                                            <div class="media">
+                                                <div class="pull-right thumb thumb-sm">
+                                                    <img class="media-object img-circle" src="assets/images/random-avatar1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="media-heading"><a role="button" tabindex="0" class="name">Консультант </a><span class="datetime">11:02</span></p>
+                                                    <span class="body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <!-- /tile body -->
+
+
+                            </section>
+                            <!-- /tile -->
+                        </div>
+                        <!-- /col -->
+            
+            
+            </div></div>
+            </section>
+
+       <!-- ============================================
+        ============== Vendor JavaScripts ===============
+        ============================================= -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="assets/js/vendor/bootstrap/bootstrap.min.js"></script>
+
+        <script src="assets/js/vendor/jRespond/jRespond.min.js"></script>
+
+        <script src="assets/js/vendor/d3/d3.min.js"></script>
+        <script src="assets/js/vendor/d3/d3.layout.min.js"></script>
+
+        <script src="assets/js/vendor/rickshaw/rickshaw.min.js"></script>
+
+        <script src="assets/js/vendor/sparkline/jquery.sparkline.min.js"></script>
+
+        <script src="assets/js/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <script src="assets/js/vendor/animsition/js/jquery.animsition.min.js"></script>
+
+        <script src="assets/js/vendor/daterangepicker/moment.min.js"></script>
+        <script src="assets/js/vendor/daterangepicker/daterangepicker.js"></script>
+
+        <script src="assets/js/vendor/screenfull/screenfull.min.js"></script>
+
+        <script src="assets/js/vendor/flot/jquery.flot.min.js"></script>
+        <script src="assets/js/vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/js/vendor/flot-spline/jquery.flot.spline.min.js"></script>
+
+        <script src="assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
+
+        <script src="assets/js/vendor/raphael/raphael-min.js"></script>
+        <script src="assets/js/vendor/morris/morris.min.js"></script>
+
+        <script src="assets/js/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+        <script src="assets/js/vendor/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="assets/js/vendor/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/datatables/extensions/dataTables.bootstrap.js"></script>
+
+        <script src="assets/js/vendor/chosen/chosen.jquery.min.js"></script>
+
+        <script src="assets/js/vendor/summernote/summernote.min.js"></script>
+
+        <script src="assets/js/vendor/coolclock/coolclock.js"></script>
+        <script src="assets/js/vendor/coolclock/excanvas.js"></script>
+        <script src="assets/js/vendor/filestyle/bootstrap-filestyle.min.js"></script>
+        <script src="assets/js/jquery.repeatable.js"></script>
+        <!--/ vendor javascripts -->
+
+
+
+
+        <!-- ============================================
+        ============== Custom JavaScripts ===============
+        ============================================= -->
+        <script src="assets/js/main.js"></script>
+        <!--/ custom javascripts -->
+
+
+
+
+
+    </body>
+</html>
