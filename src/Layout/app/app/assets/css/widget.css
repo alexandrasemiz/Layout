@@ -3,6 +3,30 @@
 @import url("http://webfonts.ru/import/lato.css");
 @import url("http://webfonts.ru/import/ubuntu.css");
 
+a{
+  color: #616f77;
+}
+a:hover{
+	text-decoration:none;
+}
+
+sup{
+	position: absolute;
+    top:8px;
+   right: 3px;
+   font-size: 7px!important;
+}
+
+.media{
+	position:relative;
+}
+
+.lost{
+	position: absolute;
+    top:0;
+    left: 35px;
+}
+
 audio{
 	width: 200px;
     height: 25px;
@@ -11,13 +35,6 @@ audio{
 video{
 	width: 200px;
     height: auto;
-}
-
-.fix-width{
-	max-width: 100px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .pointer{
@@ -6497,7 +6514,7 @@ fieldset[disabled] .twitter-typeahead .tt-input {
 }
 
 .popover .popover-content {
-  font-size: 20px;
+  font-size: 22px;
   color: #95a2a9;
   cursor: default;
 }
@@ -17688,91 +17705,4 @@ hr.line-full {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.saving{
-	height: 5px;
-    line-height: 0;
-}
-
-.saving span {
-  font-size: 30px;
-  -webkit-animation-name: blink;
-          animation-name: blink;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.saving span:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.saving span:nth-child(3) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: .2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .2;
-  }
-}
-
-@keyframes blink {
-  0% {
-    opacity: .2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: .2;
-  }
-}
-
-div.conversation-divider{
-	margin: 20px auto;
-	font-size: 10px;
-color: white;
-text-align: center;
-}
-div.conversation-divider span.client{
-	display: inline-block;
-width: 100%;
-font-size: 12px;
-position: relative;
-background-color: #51445f !important;
-padding: 4px 10px;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--ms-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
--webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-
-div.conversation-divider span{
-	display: inline-block;
-position: relative;
-background-color: rgba(0, 0, 0, 0.15);
-padding: 4px 10px;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
--ms-border-radius: 2px;
--o-border-radius: 2px;
-border-radius: 2px;
--webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
